@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package aa.zukunftstag2015.mod;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
