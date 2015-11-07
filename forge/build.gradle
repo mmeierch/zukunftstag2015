@@ -68,3 +68,15 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+tasks.setupDecompWorkspace.doLast {
+  def ws = file('../workspace/eclipse')
+  if (!ws.exists()) {
+    ws.mkdirs()
+    copy {
+      from 'eclipse'
+      into '../workspace/eclipse'
+    }
+  }
+}
+
