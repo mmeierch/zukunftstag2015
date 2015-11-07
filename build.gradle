@@ -68,3 +68,12 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+task copyWorkspaceTemplate (type: Copy) {
+  from 'eclipse-template'
+  into 'eclipse'
+  onlyIf { !file('eclipse').exists() }
+}
+
+tasks.setupDecompWorkspace.dependsOn copyWorkspaceTemplate
+
