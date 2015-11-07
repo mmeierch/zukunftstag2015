@@ -1,0 +1,12 @@
+
+task setup {
+  group = 'Setup'
+  description = 'Setup the Eclipse workspace and project configuration.'
+  dependsOn 'setupForge'
+}
+
+task setupForge (type: GradleBuild) {
+  dir = file('forge')
+  tasks = [ 'setupDecompWorkspace', 'eclipse' ]
+}
+
