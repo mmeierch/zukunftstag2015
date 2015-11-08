@@ -15,6 +15,14 @@ buildscript {
     }
 }
 
+def eclipseDir = file('eclipse')
+if (!eclipseDir.exists()) {
+  copy {
+    from 'eclipse-template'
+    to eclipseDir
+  }
+}
+
 apply plugin: 'forge'
 
 version = "1.0"
