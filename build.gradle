@@ -6,6 +6,11 @@ task setup {
 }
 
 task setupForge (type: GradleBuild) {
+  dir = file('javaintro')
+  tasks = [ 'javaintro' ]
+}
+
+task setupForge (type: GradleBuild) {
   dir = file('forge')
   tasks = [ 'setupDecompWorkspace', 'eclipse' ]
 }
