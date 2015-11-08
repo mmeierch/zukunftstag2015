@@ -1,3 +1,17 @@
 = Zukunftstag 2015
 
-Sample code and tools for Minecraft modding at Customweb on the Swiss Zukunftstag 2015.
+Beispielcode und Tools zum Minecraft-Modding bei Customweb am Schweizer Zukunftstag 2015.
+
+
+== Werkzeuge
+
+* *Java Development Kit (JDK) 8*
+** Oracle JDK f&uuml;r Windows/Macintosh: http://www.oracle.com/technetwork/java/javase/downloads/index.html -> &ldquo;Java SE 8uXX&rdquo; -> &ldquo;JDK&rdquo; -> &ldquo;DOWNLOAD&rdquo;
+** OpenJDK f&uuml;r Linux: Installation &uuml;ber Linux-Distribution
+
+* *Eclipse Luna (Windows/Macintosh/Linux):* http://www.eclipse.org/downloads/packages/release/luna/sr2 -> &ldquo;Eclipse IDE for Java Developers&rdquo;
+
+
+== Klonen des Zukunftstag-Repositories
+
+TODO
