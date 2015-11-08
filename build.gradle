@@ -2,10 +2,10 @@
 task setup {
   group = 'Setup'
   description = 'Setup the Eclipse workspace and project configuration.'
-  dependsOn 'setupForge'
+  dependsOn 'setupForge', 'setupJavaintro'
 }
 
-task setupForge (type: GradleBuild) {
+task setupJavaintro (type: GradleBuild) {
   dir = file('javaintro')
   tasks = [ 'javaintro' ]
 }
