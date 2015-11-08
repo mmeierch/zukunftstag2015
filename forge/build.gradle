@@ -15,11 +15,10 @@ buildscript {
     }
 }
 
-def eclipseDir = file('eclipse')
-if (!eclipseDir.exists()) {
+if (!file('eclipse').exists()) {
   copy {
     from 'eclipse-template'
-    to eclipseDir
+    into 'eclipse'
   }
 }
 
@@ -75,16 +74,5 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
-}
-
-tasks.setupDecompWorkspace.doLast {
-  def ws = file('../workspace/eclipse')
-  if (!ws.exists()) {
-    ws.mkdirs()
-    copy {
-      from 'eclipse'
-      into '../workspace/eclipse'
-    }
-  }
 }
 

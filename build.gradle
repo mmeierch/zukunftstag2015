@@ -7,7 +7,7 @@ task setup {
 
 task setupJavaintro (type: GradleBuild) {
   dir = file('javaintro')
-  tasks = [ 'javaintro' ]
+  tasks = [ 'eclipse' ]
 }
 
 task setupForge (type: GradleBuild) {
